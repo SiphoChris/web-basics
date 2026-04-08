@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.form-page {
+    display: grid;
+    /* justify-content: center;
+    align-items: center; */
+    place-content: center;
+    height: 100vh;
+}
+
+form {
+    border: 1px solid #ccc;
+    padding: 1.4rem;
+    border-radius: 0.4rem;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+
+    & .gender {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    & [type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 0.5rem;
+        border-radius: 0.4rem;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #0056b3;
+        }
+    }
+}
+
