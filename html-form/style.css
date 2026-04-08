@@ -9,6 +9,11 @@
     box-sizing: border-box;
 }
 
+::selection {
+    background-color: red;
+    color: #fff;
+}
+
 .form-page {
     display: grid;
     /* justify-content: center;
@@ -24,11 +29,16 @@ form {
     width: 300px;
     display: flex;
     flex-direction: column;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 
     & .gender {
         display: flex;
         gap: 1rem;
         margin-bottom: 1rem;
+
+        & > [type="radio"] {
+            accent-color: red;
+        }   
     }
 
     & [type="submit"] {
